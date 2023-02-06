@@ -42,5 +42,6 @@ adata2 = adata.raw.to_adata()
 ```
 
 - Loading large dataset:
-+ large datasets in h5ad format can be more easily handled if we read them using and additional ” backed= ‘r’ ” to the anndata.read function. 
-+ We then can make subsets of cells (genes) with only the .var and .obs in memory, and keep the data itself stored on disk
+  + large datasets in h5ad format can be more easily handled if we read them using and additional ” backed= ‘r’ ” to the anndata.read function. 
+  + We then can make subsets of cells (genes) with only the .var and .obs in memory, and keep the data itself stored on disk
+  + reference: https://scanpy.readthedocs.io/en/latest/generated/scanpy.read_h5ad.html#scanpy-read-h5ad
